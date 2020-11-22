@@ -1,0 +1,71 @@
+.newsLatter-area {
+    background: $news-latter-bac;
+    padding: 100px 0;
+    @media #{$xs} {
+        padding: 50px 0;
+    }
+    .news-latter{
+        h2 {
+        font-size: 44px;
+        font-weight: 700;
+        color: $theme-color;
+        margin-bottom: 20px;
+        @media #{$xs} {
+                font-size: 30px; 
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            font-size: 18px;
+            padding-left: 95px;
+            position: relative;
+            color: $pargraphColor;
+            padding-right: 0;
+            @media #{$xs} {
+                font-size: 16px;
+                padding-left: 75px; 
+                padding-right: 0;
+            }
+            img {    
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 48px;
+                @media #{$md} { 
+                    left: 0;
+                    top: 15px;
+                    margin-right: 8px;
+                    margin-top: -10px;
+                }
+            }
+        } 
+    }
+    .news-latter-btn{
+        @media #{$xs} {
+            text-align: center;
+        }
+        a.theme-btn {
+            width: 294px;
+            margin-left: 0px;
+            margin-top: 80px; 
+            @media #{$lg} {
+                margin-left: 0px; 
+            }
+            @media #{$md} {
+                width: 294px;
+                margin-left: 0;
+                margin-top: 29px;
+            }
+            @media #{$xs} {
+                width: 290px;
+                margin-left: 0;
+                margin-top: 29px;
+            }
+        }  
+    }
+}
+
+// newsLatter-area css END
+
+
+

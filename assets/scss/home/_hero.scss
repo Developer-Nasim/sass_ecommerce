@@ -1,0 +1,81 @@
+.hero-area {
+    background: url(../img/bac.png);
+    background-size: cover;
+    background-position: center;
+    height: 616px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px; 
+    @media #{$xs} {
+        height: 240px; 
+        background-image: none !important;
+        background-color: $white;
+    }
+    
+    .container {
+        height: 100%;
+        .row {
+            height: 100%;
+        }
+    }
+    .swiper-container { 
+        height: 100%; 
+    }  
+    .hero-content{
+        h1{
+            font-size: 44px;
+            color: $body-text-color;
+            font-weight: 700;
+            line-height: 64px;
+            margin-bottom: 45px;
+            @media #{$lg} {
+                font-size: 34px; 
+                line-height: 55px;
+                margin-bottom: 35px;
+            }
+            @media #{$sm} {
+                font-size: 29px; 
+                line-height: 39px;
+                margin-bottom: 30px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+                line-height: 35px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .hero-wrp.swiper-container.swiper-container-initialized.swiper-container-horizontal {
+        padding-top: 110px;
+        @media #{$sm} {
+            padding-top: 80px;
+        }
+        @media #{$xs} {
+            padding-top: 25px;
+        }
+    }
+      
+}
+img.responsive-img{
+    @media #{$xs} {
+        width: 100%;
+        height: 180px;
+        display: block;
+        object-fit: cover;
+        object-position: right;
+    }
+    display: none;
+} 
+.hero-wrp.swiper-container.swiper-container-initialized.swiper-container-horizontal .PAGINATIONS {
+    position: absolute;
+    bottom: 6%;
+    left: 16%;
+    width: 150px;
+    height: 32px;
+    z-index: 33;
+    margin-left: 5px;
+    @media #{$xs} {
+        left: 0;
+    }
+}
+// hero-area css END

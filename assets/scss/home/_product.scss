@@ -1,0 +1,174 @@
+.product-arae{ 
+    @media #{$xs} {
+        padding: 50px 0;
+    }
+     padding: 90px 0;
+    .hero-wrp.product-slider.swiper-container-initialized.swiper-container-horizontal {
+        overflow: hidden;
+        .PAGINATIONS {
+            margin-left: 20px;
+            @media #{$xs} {
+                left: 50%;
+                transform: translate(-50%);
+                margin-left: 0;
+            }
+            .swiper-button-prev {
+                border-color: $theme-color;
+            }
+            .swiper-button-next {
+                border-color: $theme-color;
+            }
+            .swiper-button-prev:after {
+                font-size: 15px;
+                color: $theme-color;
+                font-weight: 800;
+            }
+            .swiper-button-next:after {
+                font-size: 15px;
+                color: $theme-color;
+                font-weight: 800;
+            }
+        }
+    } 
+    .product-btn {
+        margin-top: -58px;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 2;
+        @media #{$xs} {
+            margin: 20px auto;
+            display: block;
+            float: none;
+            text-align: center;
+        }
+    } 
+    
+}
+.product-itemm {
+    margin: 0 10px;
+    box-shadow: $product-box-shadow;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 110px;
+    margin-top: 20px;
+    position: relative;
+    height: 440px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: $white;
+    @media #{$xs} {
+        height: auto !important;
+        margin-bottom: 60px;
+    }
+    @media #{$lg} {
+        height: 397px;
+    }
+    @media #{$md} {
+        height: 430px;
+    }
+    @media #{$xs} {
+        height: 430px;
+    }
+    span {
+        position: absolute;
+        right: 8px;
+        top: 15px;
+        font-size: 20px;
+        transform: rotate(51deg);
+        z-index: 6;
+        color: $news-latter-bac;
+        text-align: right;
+        visibility: hidden;
+        opacity: 0;
+        @include transition(.3s);
+        @media #{$xs} {
+            font-size: 15px;
+        }
+    }
+    span:after {content: "";position: absolute;border-top: 100px solid transparent;border-right: 92px solid $theme-color;right: -22px;z-index: -1;transform: rotate(-141deg);top: -10px;visibility: hidden;opacity: 0;@include transition(.3s);
+        @media #{$xs} {
+            content: ""; 
+                border-top: 70px solid transparent;
+                border-right: 70px solid $theme-color;
+                right: -17px;
+                z-index: -1; 
+                top: -9px; 
+                opacity: 0; 
+            }
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-left: 20px;
+        text-align: left;
+        @media #{$lg} {
+            font-size: 15px; 
+        }
+        @media #{$xs} {
+            font-size: 10px;
+        }
+    }
+    p {
+        font-size: 16px;
+        color: $body-text-color; 
+        margin-left: 20px;
+        margin-top: 30px;
+        text-align: left;
+        @media #{$xs} {
+            font-size: 14px; 
+            margin-left: 20px;
+            margin-top: 20px; 
+            margin-bottom: 5px;
+        }
+        del {
+            margin-right: 15px;
+          }
+        a{
+            img {
+                width: 27px;
+                position: absolute;
+                right: 25px;
+                bottom: 10px;
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+        }
+    }
+    img {
+        margin-bottom: 20px;
+        @media #{$xs} {
+            width: 100%;
+            height: 140px;
+        }
+    }
+}
+ 
+.product-itemm:after {
+    content: "AKCIJA";
+    width: 90px;
+    height: 33px;
+    background: $theme-color;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 30px;
+    line-height: 33px;
+    color: $news-latter-bac;
+    font-size: 16px;
+    @include transition(.3s);
+    visibility: hidden;
+    opacity: 0;
+    @media #{$xs} { 
+        width: 70px;
+        height: 25px;  
+        top: 10px; 
+        line-height: 25px; 
+        font-size: 12px;
+    }
+}
+ 
+// product-area css END
+ 

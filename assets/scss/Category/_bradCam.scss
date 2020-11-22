@@ -1,0 +1,44 @@
+.bradCam-area{
+    .bread-cams {
+        margin: 15px 0;
+        p {
+            font-size: 16px;
+            color: $heading-color;
+            @media #{$xs} {
+              font-size: 12px; 
+              text-align: right;
+            }
+            img {
+                transform: rotate(-90deg);
+                margin: 0 10px;
+                @media #{$xs} {
+                  margin: 0 5px;
+                }
+              }
+          } 
+     }
+     
+     .bradCam-wrp {
+      margin-bottom: 100px;
+      h2 {
+          font-size: 44px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        p {
+          margin: 0;
+          font-size: 16px;
+          line-height: 26px;
+          color: $pargraphColor;
+          position: relative;
+        }
+        p:after {content: "";position: absolute;width: 110px;height: 2px;background: $theme-color;bottom: -25px;left: 50%;transform: translate(-50%);}
+  } 
+}
+
+
+
+// bradCams-area css END
+
+
+

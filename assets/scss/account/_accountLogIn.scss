@@ -1,0 +1,51 @@
+.login_area.account-logIN { 
+    padding-top: 50px;
+    padding-bottom: 150px;
+    .LOG_LEFT {
+        border-right: none;
+        .user-info{
+            text-align: center;
+            img {
+                width: 38px;
+                margin-bottom: 15px;
+            }
+            h2{
+                font-size: 44px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 18px; 
+                margin-bottom: 70px;
+            }
+        }
+        form{
+            label{ 
+                width: 100%;
+            }
+            input {
+                width: 100%;
+            }
+            a.theme-btn{
+                display: block;
+                margin: auto;
+            }
+            a.rg-text{
+                text-align: center;
+                display: block;
+                margin-top: 25px;
+                font-size: 16px;
+            }
+            .f_get_password {
+                a {
+                    width: 75% ;
+                }
+            }
+        }
+    }
+}
+  
+
+// 
+
+
+

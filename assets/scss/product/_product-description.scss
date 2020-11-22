@@ -1,0 +1,113 @@
+.product-descriptions{ 
+    margin-bottom: 100px;
+    .descriptions{
+        @media #{$md} {
+            margin-top: 100px;
+        }
+        @media #{$xs} {
+            margin-top: 0px;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: $heading-color;
+            line-height: 64px;
+            @media #{$xs} {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        img.first-img {
+            margin-bottom: 20px;
+        }
+        h5 {
+            font-size: 24px;
+            font-weight: 700;
+            color: $heading-color;
+            line-height: 64px;
+        }
+        ul.first-list{ 
+         margin-bottom: 50px;
+         p {
+            font-size: 18px;
+            color: $body-text-color;
+            margin: 0;
+            margin-top: 20px;
+            @media #{$xs} {
+                font-size: 15px;
+            }
+          }
+            li{ 
+                font-size: 18px;
+                color: $body-text-color;
+                line-height: 36px;
+                a{
+                    img {
+                        position: relative;
+                        top: -5px;
+                        margin-right: 5px;
+                    }
+                }
+                @media #{$xs} {    
+                    font-size: 15px; 
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        ul.num{
+            li.fst {
+                margin-bottom: 30px;
+              }
+              li {
+                font-size: 18px;
+                color: $body-text-color;
+                margin-bottom: 15px;
+                position: relative;
+                padding-left: 20px;
+                @media #{$xs} {
+                    font-size: 15px;
+                }
+                span {
+                    color: $theme-color;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                  }
+              }
+              
+        }
+        img.table_img {
+            margin-left: -130px;
+            margin-top: -30px;
+            @media #{$lg} {
+                margin-left: -200px;
+            }
+            @media #{$md} {
+                margin-left: 0px;
+                width: 100%;
+            }
+            @media #{$xs} {
+                margin-left: 0px;
+                width: 100%;
+                margin-top: 0px;
+            }
+        }
+        p {
+            font-size: 18px;
+            color: $body-text-color;
+            @media #{$xs} {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+// product-descriptions css END
+

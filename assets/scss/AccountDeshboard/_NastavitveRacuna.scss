@@ -1,0 +1,63 @@
+.nastavitv-body{
+    .naslovi-form{
+        form{
+            .moreTexts{
+                margin-top: 35px;
+                display: block;
+                font-size: 18px;
+                color: $theme-color;
+                @media #{$xs} {
+                    margin-top: 0; 
+                    font-size: 16px; 
+                    margin-bottom: 20px;
+                }
+                img{
+                    margin-left: 30px;
+                }
+            }
+            .select-here{
+                label{
+                    padding-left: 50px;
+                }
+                .selectIn{
+                    border-top: 1px solid $theme-color;
+                    border-bottom: 1px solid $theme-color;
+                    padding: 30px 0;
+                    padding-bottom: 20px;
+                    margin-left: 50px;
+                    margin-top: 20px;
+                    margin-bottom: 34px;
+                }
+                .s_texts{
+                    p{
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                    b{
+                        font-size: 18px; 
+                        @media #{$xs} {
+                            font-size: 13px;
+                        }
+                    }
+                    span{
+                        font-size: 18px;
+                        margin-top: 50px;
+                        display: block; 
+                            @media #{$xs} {
+                                font-size: 15px;
+                                margin-top: 25px;
+                                display: block;
+                            }
+                        img{
+                            margin-right: 20px;
+                            @media #{$xs} {
+                                margin-right: 10px;
+                                margin-top: -4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

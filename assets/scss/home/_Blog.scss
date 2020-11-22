@@ -1,0 +1,33 @@
+.Blog-area {
+    padding: 90px 0;
+    @media #{$xs} {
+        padding-top: 20px !important;
+    }
+    @media #{$xs} {
+        padding: 60px 0;
+        padding-bottom: 0px;
+    }
+    .blog-box{
+        @media #{$xs} {
+            margin-bottom: 50px;
+        }
+        h4 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            color: $pargraphColor;
+            line-height: 26px;
+        }
+        a {
+            font-size: 18px;
+            color: $theme-color;
+            line-height: 28px;
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+}

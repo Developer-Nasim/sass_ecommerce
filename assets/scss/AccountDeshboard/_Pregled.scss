@@ -1,0 +1,78 @@
+.deshBoard{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    @media #{$xs} {
+        margin-bottom: 60px;
+    }
+    .Pregled{
+        .Pregled-body{
+            .Pregled_wrepper{
+                h6{    
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                }
+                a{
+                    display: block;
+                    font-size: 18px;
+                    color: $body-text-color;
+                    @media #{$xs} {
+                        font-size: 15px;
+                    }
+                    img{
+                        width: 20px;
+                    }
+                }
+                a.more-text {
+                    font-size: 18px;
+                    color: $theme-color !important;
+                    margin-top: 30px;
+                    img {
+                        margin-left: 15px;
+                    }
+                } 
+                p{
+                    line-height: 28px;
+                    font-size: 18px;
+                    margin-top: 10px;
+                    @media #{$md} {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        
+        h5 {
+            font-size: 24px;
+            font-weight: 700;
+            color: $heading-color;
+            position: relative;
+            border-bottom: 1px solid $cart-boreder-color;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            span{
+                float: right;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+ }
+ .left-menus{
+    ul#pills-tab {
+        li.nav-item{
+            display: block;
+            width: 100%;
+            a.nav-link{
+                background-color: transparent !important;
+                font-size: 18px;
+                line-height: 26px;
+             }
+             a.nav-link.active{
+                 color: $theme-color;
+             }
+         }
+     }
+ }
+ 

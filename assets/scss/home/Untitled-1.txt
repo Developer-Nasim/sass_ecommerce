@@ -1,0 +1,14 @@
+ 
+Site-bar, table ====> Product.html
+Cart table ======> cart.html
+
+
+
+
+
+
+
+
+
+
+

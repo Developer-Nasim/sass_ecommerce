@@ -1,0 +1,86 @@
+div#productPopup {
+    .modal-dialog.modal-dialog-scrollable {
+        min-width: 856px;
+        max-width: 857px;
+        box-shadow: $product-box-shadow;
+        border-radius: 5px;
+        @media #{$md} {
+            min-width: 750px !important;
+            max-width: 750px !important; 
+        }
+        @media #{$xs} {
+            min-width: 350px !important;
+            max-width: 350px !important; 
+            margin: auto;
+        }
+        .modal-content { 
+            .modal-header {
+                border: none;
+                padding: 0;
+                button.close {
+                    margin-right: 5px;
+                    margin-top: -10px;
+                    opacity: 1;
+                }
+            }
+            .modal-body {
+                padding-top: 0px !important;
+                padding-bottom: 35px;
+                overflow: hidden;
+                .product-symble {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 306px;
+                    }
+                }
+                .product-contents{
+                    h5 {
+                        font-size: 24px;
+                        font-weight: 900;
+                        color: #DE5A46;
+                        line-height: 50px;
+                        margin-bottom: 0;
+                    }
+                    h4 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 25px;
+                    }
+                    h3 {
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 74px;
+                    }
+                    p {
+                        font-size: 16px;
+                        padding-right: 15px;
+                        margin-bottom: 20px;
+                    }
+                    a.theme-btn {
+                        width: 262px;
+                        padding-left: 35px;
+                    }
+                }
+            }
+        }
+    } 
+    .modal-content {
+        @media #{$xs} {
+            max-height: 1036px !important;
+            min-height: 840px !important;
+            margin-bottom: 25px;
+        }
+    }
+}
+.modal-backdrop { 
+    background-color: #FFF1EF;
+}
+.modal-backdrop.show {
+    opacity: .9;
+}
+.modal-dialog-scrollable .modal-content {
+    border: none !important;
+}

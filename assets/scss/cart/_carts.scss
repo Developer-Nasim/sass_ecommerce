@@ -1,0 +1,228 @@
+.cart-detailse-area{
+    margin-bottom: 120px;
+    @media #{$xs} {
+        margin-bottom: 50px;
+    }
+    .carts{
+        margin-bottom: 40px;
+        @media #{$xs} {
+            margin-bottom: 5px;
+        }
+        h3 {
+            font-size: 44px;
+            font-weight: 700;
+        }
+    }
+    .tbl-text {
+        a {
+            font-size: 18px;
+            color: $theme-color;
+            font-weight: 500;
+            margin-left: 20px;
+            margin-top: 23px;
+            display: block;
+            @media #{$xs} {   
+                text-align: center;
+                margin-left: 0;
+            }
+            img {
+                transform: rotate(180deg);
+                margin-right: 15px;
+            }
+        }
+    }
+    .tbl-btn {
+        a.theme-btn {
+            width: 416px;
+            padding-left: 140px;
+            @media #{$xs} {   
+                margin-top: 30px !important; 
+                width: 295px;
+                padding-left: 80px;
+                margin: auto;
+                display: block;
+            }
+            @media #{$md} {   
+                width: 320px;
+                padding-left: 96px;
+            }
+        }
+    }
+}
+
+.cart-table {
+    @media #{$xs} {
+        overflow-x: scroll;
+        margin-bottom: 20px;
+    }
+}
+.cart-tabls {
+    box-shadow: 0px 0px 11px 11px #a6a6a61f;
+    background: $white;
+    margin-top: 20px;
+    padding: 40px;
+    @media #{$xs} {
+        padding: 20px !important; 
+    }
+    table {
+        width: 100%;
+        border-bottom: 1px solid $bdr-color;
+        margin-bottom: 25px;
+        @media #{$xs} {
+            width: 890px !important;
+        }
+        thead {
+            tr{
+                th{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $body-text-color;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        tbody {
+            tr{
+                border-top: 1px solid $cart-boreder-color;
+                td{
+                    padding: 10px 0;
+                    img{
+                        width: 104px;
+                        height: 104px;
+                        overflow: hidden;
+                    }
+                    img.lst-img {
+                        width: 17px;
+                        height: 10px;
+                        margin-top: -3px;
+                    }
+                    h5 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-top: 15px;
+                        @media #{$md} {
+                            font-size: 19px;
+                        }
+                    } 
+                    .nice-number {
+                        top: 0;
+                        button:first-child {
+                            border: 1px solid #4e5f7c6b;
+                            border-radius: 3px;
+                            width: 32px;
+                            height: 32px;
+                            text-align: center;
+                            padding: 0;
+                            background: $white;
+                            font-size: 26px;
+                            line-height: 0;
+                            color: $heading-color;
+                        }
+                        button:last-child {
+                            border: 1px solid #4e5f7c6b;
+                            border-radius: 3px;
+                            width: 32px;
+                            height: 32px;
+                            text-align: center;
+                            padding: 0;
+                            background: $white;
+                            font-size: 26px;
+                            line-height: 0;
+                            color: $heading-color;
+                        }
+                    }
+                    .nice_num input[type="number"] {
+                        background: none;
+                        border: none;
+                        margin: 0 15px;
+                        width: 20px !important;
+                    }
+                    .nice-number::after{
+                        display: none;
+                    }
+                    p.t_p {
+                        margin-top: -40px;
+                        margin-bottom: 0;
+                        font-size: 18px;
+                        color: $body-text-color;
+                        margin-right: 0;
+                        text-align: right;
+                    }
+                }
+                td.last {
+                    padding-right: 35px;
+                }
+                td.last a {
+                    margin-left: 10px;
+                    display: block;
+                    margin-top: 15px;
+                    font-size: 16px;
+                    color: $heading-color;
+                }
+            }
+        }
+    } 
+    .total-text {
+        p {
+            font-size: 18px;
+            color: $heading-color;
+            margin-bottom: 15px;
+            span {
+                float: right;
+                color: $body-text-color;
+            }
+        }
+        .a_select{
+            display: flex;
+            .selects-group {
+              text-align: right;
+              label.amount_check {
+                font-size: 16px;
+                text-align: left;
+                color: $body-text-color;
+                margin-bottom: 20px;
+                @media #{$xs} {
+                    font-size: 13px;
+                }
+              }
+            }
+        }
+        .a_select span {
+          margin-right: 80px;
+          font-size: 18px;
+          color: $heading-color; 
+          @media #{$lg} {
+              margin-right: 65px; 
+          }
+            @media #{$xs} {
+                margin-right: 20px;
+                font-size: 15px;
+            }
+        }
+        .amount-select {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #4e5f7c6b;
+            padding-bottom: 55px;
+            label {
+                font-size: 14px;
+                color: $heading-color;
+            }
+        }
+       h3 {
+            font-size: 20px !important;
+            color: $heading-color;
+            span {
+                float: right;
+                color: $body-text-color;
+            }
+        } 
+        .nice-select {
+            width: 100%;
+            margin-bottom: 20px;
+            ul.list{
+                width: 100%;
+            }
+        }
+      }   
+}
+ 

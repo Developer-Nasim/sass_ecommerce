@@ -1,0 +1,107 @@
+.productBar {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    z-index: 99;
+    box-shadow: $productShadow;
+    border-radius: 10px 0px 0px 10px;
+    height: 100vh;
+    width: 426px;
+    overflow-y: scroll;
+    margin-right: -500px;
+    transition: .3s;
+    @media #{$xs} {
+        width: 360px;
+    }
+    .login_info {
+        height: 100%;
+        border-radius: 0;
+        @media #{$xs} {
+            margin-top: 0;
+        }
+        .cart{
+            h4 {
+                a {
+                    float: right;
+                    margin-right: -13px;
+                    img {
+                        width: 12px;
+                    }
+                }
+            }
+            h5 {
+                position: relative; 
+                margin: 10px 20px;
+                    span {
+                        img {
+                            width: 8px;
+                            height: 8px;
+                            display: inline-flex;
+                            position: absolute;
+                            right: -15px;
+                            top: 15px;
+                        }
+                    }
+                }
+                .amount-text {
+                    margin: 10px 20px;
+                    border-bottom: 1px solid #cfd3db;
+                    margin-bottom: 20px;
+                     h4 {
+                        font-size: 20px !important; 
+                        padding-bottom: 5px !important; 
+                    }
+                }
+            }
+    }
+    .btn-blk {
+        text-align: center;
+        a.theme-btn {
+            display: block;
+            margin: auto;
+            width: 368px;
+            padding-left: 115px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: $white;
+            @media #{$xs} {
+                margin: 0 20px;
+                width: 320px !important;
+            }
+        }
+        a {
+            font-size: 16px;
+            color: $theme-color;
+        }
+    } 
+        
+}
+.productBar.product-bar-active{
+    margin-right: 0;
+}
+.productBar.product-bar-active.product-bar-close{
+    margin-right: -500px;
+}
+.overlay {
+    display: block;
+    position: fixed;
+    background: $theme-overlay-color;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: .9;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}   
+.overlay.overlay_product {
+    visibility: visible;
+    opacity: 1;
+}
+.overlay.overlay_hide{
+    visibility: hidden;
+    opacity: 0;
+}

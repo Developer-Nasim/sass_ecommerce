@@ -1,0 +1,52 @@
+.cardt-table {
+    max-width: 856px;
+    background: $white;
+    min-width: 856px;
+    padding: 20px 45px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 47px -14px #d7d7d7;
+    margin-left: -90px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    @media #{$lg} {
+        margin-left: -200px;
+    }
+    @media #{$md} {
+       max-width: 640px;
+       min-width: 640px;
+       margin-left: -40px;
+    }
+    @media #{$xs} {
+       max-width: 100%;
+       min-width: 100%;
+       margin-left: 0;
+       overflow-x: scroll;
+    }
+    table {
+        width: 100%;
+        @media #{$xs} {
+            width: 520px;
+        }
+        tr{
+            td {
+                border-bottom: 1px solid $table-border;
+                padding: 10px 0px;
+                margin-bottom: 15px;
+                color: $body-text-color;
+                font-size: 18px;
+                line-height: 28px;
+                @media #{$xs} { 
+                    padding: 5px 0px; 
+                    font-size: 16px; 
+                }
+            }
+        }
+        tr.last-row {
+            td {
+                border-bottom: none !important;
+            }
+        }
+    }
+}  
+ 
+ 

@@ -1,0 +1,49 @@
+.senznam-body{
+    .senznam_wrepper{
+        .desh-cart{
+            .cart-tabls{
+                padding-bottom: 0; 
+                width: 966px;
+                height: 627px;margin-bottom: 20px;
+                @media #{$lg} {
+                    width: 100%;
+                }
+                @media #{$md} {
+                    width: 100%;
+                    height: auto;
+                }
+                @media #{$xs} {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+                .cart-table{
+                    table{
+                        tbody{
+                            tr{
+                                td{
+                                    p.t_p{
+                                        margin-top: -32px;
+                                        margin-bottom: 0 !important;
+                                        a{
+                                            img{
+                                                width: 10px;
+                                                height: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                                td:nth-child(3){
+                                    padding-bottom: 40px;
+                                }
+                            }
+                            tr:last-child{
+                                border-bottom: 1px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
